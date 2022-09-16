@@ -1,9 +1,11 @@
 @extends('layouts.main')
 
-@section('title', 'Produtos')
+@section('title', 'HDC Events')
 
 @section('content')
-    
-<h1>Tela de Produtos</h1>
-@endsection
 
+@if ($id != null)
+    <p>Exibindo o produto com o id: {{$id}}</p>
+@endif
+
+@endsection
